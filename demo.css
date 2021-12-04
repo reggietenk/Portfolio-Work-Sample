@@ -8,63 +8,94 @@
     margin: 0%;
 }
 
-.header {
-    display: inline-flexbox;
-    padding: 40px;
-    background-color:rgb(1, 60, 75);
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(107, 107, 107);
+    color: rgb(25, 60, 156);
+    background-color: rgb(101, 102, 102);
 }
 
-.header h1 {
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color:rgb(25, 60, 156);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(238, 238, 238);
+    
+}
+
+header h1 {
     font-size: 50px;
     display: flexbox;
     text-align: center;
     
 }
 
-.header nav {
+header nav {
     padding-top: 10px;
     margin-right: 40px;
     font-size: 25px;
 }
 
-.header nav ul {
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    font-size: 40px;
 }
 
-.header nav ul li a {
+header nav ul li a {
     display: flexbox;
     margin-left: 30px;
     list-style-type: none;
     float: right;
-    background-color: rgb(107, 107, 107);
-    color: rgb(245, 245, 245);
-    font-family:Arial, Helvetica, sans-serif;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgb(25, 60, 156);
+    color: rgb(255, 255, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+footer {
+    background: rgb(25, 60, 156);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; 
+    color: white;
+}
+
+
 .hero {
-    background-image: url("../Portfolio-Work-Sample/images/hero5.jpg");
-    height: 600px;
+    background-image: url("../Portfolio-Work-Sample/images/hero4.jpg");
+    height: 700px;
     background-size: cover;
     background-position: center;
-    position: relative;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.herobox {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    padding: 80px;
+    right: 120px;
+    bottom: 140px;
+    display: flex;
+    width: 70%;
+
 }
 
 .container {
-    width: 25%;
+    width: 30%;
     align-items: center;
     flex-wrap: wrap;
-    float: right;
-    padding: 40px;
+    padding: 55px;
+    display: flex;
+    float: left;
   }
 
   .container img {
@@ -112,32 +143,94 @@
   }
 
   .content {
-    width: 75%;
-    display: flexbox;
-    margin-left: 20px;
-    padding: 40px;
-    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
+
+.content-info {    
+   display: flex;
+   margin: auto;
+   justify-content: space-between;
+   }
+
 
 .about-me, .my-work, .contact {
-    margin-bottom: 20px;
-    padding: 80px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(1, 60, 75);
+    margin: 20px;
+    flex: 1;
+    background: rgb(25, 60, 156);
     color: #ffffff;
-    display: flexbox;
-    border: 4px solid black;
-    flex-direction: row;
+    flex-wrap: wrap;
+
+    
 }
 
-.about-me img, .my-work img, .contact img {
+.about-me img, .contact img {
     max-height: 200px;
 }
 
-.about-me h2, .my-work h2, .contact h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+.my-work img {
+    max-width: 40%;
+    max-height: 70%;
+    flex-wrap: wrap;
+    display: flex;
 }
+
+
+
+.about-me h2, .my-work h2, .contact h2 {
+    font-size: 52px;
+    
+}
+
+
+@media screen and (max-width: 580px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+     header h1 {
+         width: 100%;
+         text-align: center;
+     }
+ 
+     header nav ul {
+         margin-top: 20px;
+         width: 100%;
+         justify-content: center;
+     }
+ 
+     header nav ul li a {
+         font-size: 20px;
+     }
+ 
+     footer h2, footer div, footer {
+         text-align: center;
+         width: 100;
+     }
+ 
+     .hero-cta, .hero-form {
+         width: 100%;
+     }
+ 
+     .hero-cta {
+         text-align: center;
+     }
+ 
+     .section-title {
+         width: 80%;
+     }
+ 
+     .trainer {
+         flex: 0 70%;
+     }
+ 
+     .contact-info iframe{
+         flex: 1 100%;
+     }
+         
+     }
 
