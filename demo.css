@@ -69,7 +69,7 @@ footer {
 
 .hero {
     background-image: url("../Portfolio-Work-Sample/images/hero4.jpg");
-    height: 700px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -90,12 +90,11 @@ footer {
 }
 
 .container {
-    width: 30%;
-    align-items: center;
+    width: 40%;
     flex-wrap: wrap;
     padding: 55px;
     display: flex;
-    float: left;
+    margin: auto;
   }
 
   .container img {
@@ -103,43 +102,13 @@ footer {
       flex-wrap: wrap;
       display: flexbox;
   }
-  
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    align-content: center;
-  }
-  
-  .bottom {
-    transition: .5s ease;
-    opacity: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-  
+    
   .container:hover .image {
     opacity: 0.3;
   }
   
   .container:hover .bottom {
     opacity: 1;
-  }
-  
-  .text {
-    background-color: rgb(2, 0, 0);
-    color: white;
-    font-size: 16px;
-    padding: 16px 40px;
-    border: 4px solid black;
-    text-align: center;
-
   }
 
   .content {
@@ -177,17 +146,24 @@ footer {
     max-height: 70%;
     flex-wrap: wrap;
     display: flex;
+    padding: 20px 15px;
+    justify-content: center;
+    margin: auto;
 }
 
 
 
-.about-me h2, .my-work h2, .contact h2 {
+.about-me h2, .contact h2 {
+    font-size: 52px; 
+}
+
+.my-work h2 {
     font-size: 52px;
-    
+    text-align: center;
 }
 
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 7000px) {
     header {
         padding-bottom: 0;
         justify-content: center;
@@ -211,26 +187,59 @@ footer {
          text-align: center;
          width: 100;
      }
- 
-     .hero-cta, .hero-form {
+
+    }
+
+
+@media screen and (max-width: 900px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+     header h1 {
          width: 100%;
-     }
- 
-     .hero-cta {
          text-align: center;
      }
  
-     .section-title {
-         width: 80%;
+     header nav ul {
+         margin-top: 20px;
+         width: 100%;
+         justify-content: center;
      }
  
-     .trainer {
-         flex: 0 70%;
+     header nav ul li a {
+         font-size: 20px;
      }
  
-     .contact-info iframe{
-         flex: 1 100%;
+     footer h2, footer div, footer {
+         text-align: center;
+         width: 100;
      }
-         
+    }
+ 
+     
+    @media screen and (max-width: 580x) {
+        header {
+            padding-bottom: 0;
+            justify-content: center;
+        }
+         header h1 {
+             width: 100%;
+             text-align: center;
+         }
+     
+         header nav ul {
+             margin-top: 20px;
+             width: 100%;
+             justify-content: center;
+         }
+     
+         header nav ul li a {
+             font-size: 20px;
+         }
+     
+         footer h2, footer div, footer {
+             text-align: center;
+             width: 100;
+         }
      }
-
