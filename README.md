@@ -8,6 +8,6 @@
 
 ### Added recent projects to webpage to display skillset.
 
-### Added navigation to webpage to make it more accessible for users. 
+### Added navigation to webpage to make it more accessible for users.  
 
 
